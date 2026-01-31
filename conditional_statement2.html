@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conditional statement</title>
+</head>
+
+<body>
+    <script>
+    //     // check whether a number is positive, negative and zero.
+    //     let a = parseInt(prompt("enter a number....."));
+    //     if(a > 0){
+    //         document.write("number is positive.");
+    //     }
+    //     else if (a == 0){
+    //         document.write("number is zero.");
+    //     }
+    //     else {
+    //         document.write("number is negative.");
+    //     }
+
+    //     //number is even or odd.
+    //     let a = parseInt(prompt("enter a number..."));
+    //     if (a % 2 == 0){
+    //         document.write("number is even.");
+    //     }
+    //     else{
+    //         document.write("number is odd.");
+    //     }
+
+
+    //     //largest of two numbers.
+    //     let a = parseFloat(prompt("enter first number."));
+    //     let b = parseFloat(prompt("enter second number."));
+    //     if(a > b){
+    //         document.write("A is greater.");
+    //     }
+    //     else {
+    //         document.write("B is greater.");
+    //     }
+
+
+    //     // largest of three numbers.
+    //     let a = parseFloat(prompt("enter first number..."));
+    //     let b =  parseFloat(prompt("enter second number..."));
+    //     let c =  parseFloat(prompt("enter third number..."));
+    //     if(a > b && a > c){
+    //         document.writeln("A is greatest.");
+    //     }
+    //     else if(b > a && b > c){
+    //         document.write("B is greatest.");
+    //     }
+    //     else if(c > a && c > b){
+    //         document.write("C is greatest.");
+    //     }
+
+
+    //    // year is leap or not.
+    //     let a = parseInt(prompt("enter a year."));
+    //     if((a  % 4 == 0 && a % 100 != 0) || a % 400 == 0){
+    //         document.write("year is leap.");
+    //     } 
+    //     else {
+    //         document.write("year is not a leap year.");
+    //     }
+
+
+    //     //character is vowel or consonent.
+    //     let a = prompt("enter a character.");
+    //     if (a == "a"  || a=="e"  || a=="i" || a=="o" || a=="u" || a=="A" || a=="E" || a=="I" || a=="O" || a=="U") {
+    //         document.write("entered character is vowel.");
+    //     }
+    //     else {
+    //         document.write("character is consonent.");
+    //     }
+
+
+    //     //number is divisible by 5 and 11.
+    //     let a = parseInt(prompt("enter a number."));
+    //     if (a % 5 == 0 && a % 11 == 0) {
+    //         document.writeln("number is divisible by 5 and 11.");
+    //     }
+    //     else {
+    //         document.write("not divisible by 5 and 11.");
+    //     }
+
+
+    //     //login system with username and check password.
+    //     let pass = 1234;
+    //     let user = "mohit"
+    //     let username = prompt("enter username.");
+    //     let password = parseInt(prompt("Enter Password "))
+    //     if(username == user && password == pass){
+    //         console.log("Login successfull")
+    //     } else{
+    //         console.log("Login Failed")
+    //     } 
+
+
+    //     //any person is eligiblw to vote or not.
+    //     let age = parseInt(prompt("enter your age."));
+    //     if(age >= 18){
+    //         document.write("you are eligible to vote.");
+    //     }
+    //     else{
+    //         document.write("not eligible to vote.");
+    //     }
+
+
+    //     //lies between a given range or not.
+    //     let a = 50;
+    //     let b = 12;
+    //     let c = parseInt(prompt("enter number."));
+    //     if (c >= 12 && c <= 50) {
+    //         document.write("number lies between the given series.");
+    //     }
+    //     else {
+    //         document.write("number not lies between the given series.");
+    //     }
+
+
+    //     // grades based on their percentage.
+    //     let per = parseInt(prompt("enter your percentage."));
+    //     if (per >= 90 && per <= 100) {
+    //         document.write("GRADE A");
+    //     }
+    //     else if (per < 90 && per >= 75) {
+    //         document.write("GRADE B");
+    //     }
+    //     else if(per < 75 && per >= 50){
+    //         document.write("GRADE C");
+    //     }
+    //     else if(per >=33 && per < 50){
+    //         document.write("GRADE D");
+    //     }
+    //     else{
+    //         document.write("you are fail.");
+    //     }
+
+
+    //    // simple calculator.
+    //     let a = parseInt(prompt("enter first number."));
+    //     let b = prompt("enter any operation(+,-,*,/,**,%)");
+    //     let c = parseInt(prompt("enter second number."));
+    //     if(b == "+"){
+    //         document.write("sum is : ",a + c);
+    //     }
+    //     else if(b == "-"){
+    //         document.write("substract is : ",a - c);
+    //     }
+    //     else if(b == "*"){
+    //         document.write("multiply is : ",a * c);
+    //     }
+    //     else if(b == "/"){
+    //         document.write("division is : ",a / c);
+    //     }
+    //     else if(b == "**"){
+    //         document.write("exponential is : ", a ** c);
+    //     }
+    //     else if(b == "%"){
+    //         document.write("modulus is : ",a % c);
+    //     }
+    //     else{
+    //         document.write("input is invalid.");
+    //     }
+
+
+        //traingle is valid or not.
+        let a = parseInt(prompt("enter first side of triangle."));
+        let b = parseInt(prompt("enter second sie of traingle."));
+        let c = parseInt(prompt("enter thiord side of traingle."));
+        if((a + b) > c && (a + c) > b && (b + c) > a){
+            document.write("traingle is valid.");
+        }
+        else{
+            document.write("traingle is invalid.");
+        }
+
+    </script>
+</body>
+
+</html>
