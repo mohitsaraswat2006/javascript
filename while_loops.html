@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while loops</title>
+</head>
+
+<body>
+    <script>
+        // //=================================PRINT 1- 10=======================================
+        // let i = 1;
+        // while(i<=10){
+        //     document.write(i,"<br>");
+        //     i++;
+        // }
+
+        //=========================================PRINT 10-1===================================
+        // let j = 10;
+        // while(j>=1){
+        //     document.writeln(j,"<br>");
+        //     j--;
+        // }
+
+        //=======================================PRINT NO. OF DIGITS OF A NUMBER======================
+        // let num = parseInt(prompt("enter a number : "));
+        // let count = 0;
+        // while (num > 0) {
+        //     let last_digit = num % 10;
+        //     count++;
+        //     num = parseInt(num / 10);
+        // }
+        // document.writeln("digit count is  : ", count);
+
+        //==================================PRINT FIBONICCI SERIES===================================
+        // 0,1,1,2,3,5,8,13,............(FIBONICCI SERIES).
+        // let num = parseInt(prompt("enter the number of terms want to find :- "));
+        // let num1 = 0;
+        // let num2 = 1;
+        // let count = 1;
+        // while(count <= num){
+        //     document.writeln(num1,"<br>")
+        //     let sum = num1 + num2;   
+        //     num1 = num2  
+        //     num2 = sum   
+        //     count++;              
+        // }
+
+        //===============================REVERSE OF A NUMBER=========================================
+
+        let num = parseInt(prompt("enter the number to reverse the digits :- "));
+        let rev = 0;
+        while (num > 0) {
+            let last_digit = num%10;
+            rev = rev*10+last_digit;
+            num = parseInt(num/10);
+        }
+        document.writeln("reverse of that number is : - ",rev)
+
+    </script>
+
+</body>
+
+</html>
