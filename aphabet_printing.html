@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pattern printing</title>
+    <style>
+        * {
+            color: rgb(56, 183, 228);
+            font-weight: 400px;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        // =================================PRINTING A=======================================
+        // document.writeln("<table border cellspacing='0' cellpadding='3'>")
+        // for (let row = 1; row <= 6; row++) {
+        //     document.writeln("<tr>")
+        //     for (let col = 1; col <= 5; col++) {
+        //         if ((col==1 || col==5) && row>1){
+        //             document.writeln("<td style='color:yellow;'>*&nbsp;&nbsp;</td>")
+        //         }
+        //         else if((row==1 || row==4)&&(col>1 && col<5)){
+        //             document.writeln("<td style='color:pink;'>*&nbsp;</td>")
+        //         }
+        //         else{
+        //             document.writeln("<td> &nbsp;&nbsp;&nbsp; </td>")
+        //         }
+        //         // document.writeln(" * ")
+        //     }
+        //     document.writeln("</tr>")
+
+        //     // document.writeln("<br>")
+        // }
+        // document.writeln("</table>")
+
+
+        // ========================================PRINTING D======================================
+        // for (let row = 1; row <= 5; row++) {
+        //     for (let col = 1; col <= 5; col++) {
+        //         if (col == 1 || (col == 5 && (row > 1 && row < 5))) {
+        //             document.writeln("@");
+        //         }
+        //         else if ((row == 1 || row == 5) && col < 5) {
+        //             document.writeln("@");
+        //         }
+        //         else {
+        //             document.writeln("&nbsp;&nbsp;&nbsp;")
+        //         }
+
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+
+        // ============================================OR================================================
+        // for (let row = 1; row <= 5; row++) {
+        //     for (let col = 1; col <= 5; col++) {
+        //         if (col == 1 || (col == 5 && (row > 1 && row < 5)) || (row == 1 || row == 5) && (col < 5)) {
+        //             document.writeln("*&nbsp;");
+        //         }
+        //         else {
+        //             document.writeln("&nbsp;&nbsp;&nbsp;");
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //=======================================PRINTING B==============================================
+        // for(let row=1; row<=5; row++){
+        //     for(let col=1; col<=4; col++){
+        //         if(col==1 || (col ==4 && row%2==0)){
+        //         document.writeln("*");
+        //         }
+        //         else if((row==1 || row==3 || row==5)&&col<5){
+        //             document.writeln("*")
+        //         }
+        //         else{
+        //             document.writeln("&nbsp;&nbsp;&nbsp;")
+        //         }
+        //     }
+        //     document.writeln("<br>");
+        // }
+
+        //===================================PRINTING C=================================================
+        // for(let row=1; row<=6; row++){
+        //     for(let col=1; col<=4; col++){
+        //         if(col==1 && (row<6 && row>1)){
+        //         document.writeln("*")
+        //         }
+        //         else if((row==1 || row==6) && col>1){
+        //             document.writeln("*")
+        //         }
+        //         else{
+        //             document.writeln("&nbsp;&nbsp;")
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //=====================================PRINTING E==============================================
+        // for (let row = 1; row <= 5; row++) {
+        //     for (let col = 1; col <= 4; col++) {
+        //         if (col == 1) {
+        //             document.writeln("*")
+        //         }
+        //         else if ((row == 1 || row == 3 || row == 5) && col > 1) {
+        //             document.writeln("*")
+        //         }
+
+        //         else {
+        //             document.writeln("&nbsp;")
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //==========================================PRINTING F=======================================
+        // for (let row = 1; row <= 5; row++) {
+        //     for (let col = 1; col <= 4; col++) {
+        //         if (col == 1) {
+        //             document.writeln("*")
+        //         }
+        //         else if ((row == 1 || row == 3) && col > 1) {
+        //             document.writeln("*")
+        //         }
+
+        //         else {
+        //             document.writeln("&nbsp;")
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //===========================================PRINTING H======================================
+        // for (let row = 1; row <= 5; row++) {
+        //     for (let col = 1; col <= 5; col++) {
+        //         if (col == 1 || col == 5) {
+        //             document.writeln("*")
+        //         }
+        //         else if(row == 3){
+        //             document.writeln("*")
+        //         }
+        //         else{
+        //             document.writeln("&nbsp;&nbsp;")
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+
+        //=============================================PRINTING I=====================================
+        // for(let row=1; row<=5; row++){
+        //     for(let col=1; col<=5; col++){
+        //         if(row==1 || row==5){
+        //         document.writeln("*")
+        //         }
+        //         else if(col == 3){
+        //             document.writeln("*")
+        //         }
+        //         else{
+        //             document.writeln("&nbsp;&nbsp;")
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //======================================PRINTING L============================================
+        // for (let row = 1; row <= 6; row++) {
+        //     for (let col = 1; col <= 5; col++) {
+        //         if (col == 1 || row == 6) {
+        //             document.writeln("*")
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //====================================PRINTING O ============================================
+        // for (let row = 1; row <= 5; row++) {
+        //     for (let col = 1; col <= 5; col++) {
+        //         if ((row == 1 || row == 5)&& (col > 1 && col < 5)) {
+        //             document.writeln("*")
+        //         }
+        //         else if((col == 1 || col == 5) && (row > 1 && row < 5)){
+        //             document.writeln("*")
+        //         }
+        //         else {
+        //             document.write("&nbsp;&nbsp;&nbsp;")
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //========================================PRINTING P=========================================
+        // for(let row = 1; row <= 5; row++){
+        //     for(let col = 1; col <= 4; col++){
+        //         if(col == 1 || (col == 4 && row < 4)){
+        //         document.write("*&nbsp;&nbsp;");
+        //         }
+        //         else if(row == 1 || row == 3){
+        //             document.write("*&nbsp;&nbsp;");
+        //         }
+        //         else{
+        //             document.write("&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;")
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        // =======================================PRINTING S=======================================
+        // for(let row = 1; row <= 5; row++){
+        //     for(let col = 1; col <= 5; col++){
+        //         if((row == 1 && col > 1)|| (row == 3 && (col > 1 && col < 5)) || (row == 5 && col < 5)){
+        //         document.write("*&nbsp;&nbsp;");
+        //         }
+        //         else if((col == 1 && row == 2) || (col == 5 && row == 4)){
+        //             document.write("*")
+        //         }
+        //         else{
+        //             document.write("&nbsp;&nbsp;&nbsp;&nbsp;")
+        //         }
+        //     }
+        //     document.writeln("<br>");
+        // }
+
+        //=======================================PRINTING T========================================
+        // for(let row = 1; row <= 5; row++){
+        //     for(let col = 1; col <= 5; col++){
+        //         if(row == 1 || (col == 3 && row > 1)){
+        //         document.write("*&nbsp;");
+        //         }
+        //         else{
+        //             document.writeln("&nbsp;&nbsp;")
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //===================================PRINTING U===========================================
+        // for(let row = 1; row <= 5; row++){
+        //     for(let col =1; col <= 5; col++){
+        //         if(col == 1 || col == 5){
+        //         document.writeln("*");
+        //         }
+        //         else if(row == 5){
+        //             document.writeln("*")
+        //         }
+        //         else{
+        //             document.write("&nbsp;&nbsp;&nbsp;")
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        //=================================PRINTING N===========================================
+        // for(let row = 1; row <= 5; row++){
+        //     for(let col = 1; col <= 6; col++){
+        //         if(col == 1 || col == 5){
+        //         document.writeln("*");
+        //         }
+        //         else if(col == row){
+        //             document.writeln("*");
+        //         }
+        //         else{
+        //             document.writeln("&nbsp;&nbsp;")
+        //         }
+        //     }
+        //     document.writeln("<br>")
+        // }
+
+        // ====================================PRINTING Z=======================================
+        // document.writeln('<table border cellspacing ="0" cellpadding = "20px">')
+        // let count = 7;
+        // for(let row = 1; row <= 6; row++){
+        //     document.writeln("<tr>")
+        //     for(let col = 1; col <= 6; col++){
+        //         if(row == 1 || row == 6){
+        //         document.writeln("<th>*</th>");
+        //         }
+        //         else if(col == count-1){
+        //             document.writeln("<th>*</th>");
+        //         }
+        //         else{
+        //             document.writeln("<th>&nbsp;&nbsp;")
+        //         }
+        //     }
+        //     count--;
+        //     document.writeln("<br>")
+        //     document.writeln("</tr>")
+        // }
+        // document.write("</tabel>");
+
+        //==============================PRINTING K ============================================
+        // let count = 5;
+        // let count2 = -1;
+        //     document.writeln('<table border cellpadding = "20px">')
+        //         for(let row = 1; row <= 7; row++){
+        //         document.writeln("<tr>");
+        //             for(let col = 1; col <= 5; col++){
+        //                 if(col == 1){
+        //                     document.writeln("<th>*</th>");
+        //                 }
+        //                 else if(col == count){
+        //                     document.write("<th>*</th>")
+        //                 }
+        //                 else if(col == count2){
+        //                     document.write("<th>*</th>")
+        //                 }
+        //                 else{
+        //                     document.writeln("<th>&nbsp;&nbsp;");
+        //                 }
+        //             }
+        //             document.writeln("<br></tr>");
+        //             count--;
+        //             count2++;
+        //         }
+        //     document.writeln("</table>")
+
+        //===============================PRINTING M=============================================
+        // let count = 7;
+        // document.writeln("<table border cellpadding='20px'>");
+        //     for(let row = 1; row <= 6; row++){
+        //         document.writeln("<tr>");
+        //             for(let col = 1; col <= 7; col++){
+        //                 if(col == 1 || col == 7){
+        //                     document.writeln("<th>#</th>");
+        //                 }
+        //                 else if(col == row && col < 5){
+        //                     document.writeln("<th>#</th>")
+        //                 }
+        //                 else if(col == count && col > 4){
+        //                     document.writeln("<th>#</th>")
+        //                 }
+        //                 else{
+        //                     document.writeln("<th>&nbsp;&nbsp;</th>")
+        //                 }
+        //             }
+        //             document.writeln("</tr>");
+        //             count--;
+        //     }
+        //     document.writeln("</table>");
+
+
+    </script>
+
+</body>
+
+</html>
