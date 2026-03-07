@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops questions</title>
+    <style>
+        * {
+            font-size: larger;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //==================== 1.  PRINT 1 TO 50 USING LOOP==========================
+        // for(let i = 1; i <= 50; i++){
+        //     document.writeln(i,"<br>")
+        // }
+
+        //======================== 2.  PRINT EVEN NUMBERS 1 TO 100======================
+        // for(let j = 1; j <= 100; j++){
+        //     if(j % 2 == 0){
+        //         document.writeln(j,"<br>")
+        //     }
+        // }
+
+        //======================== 3. PRINT ALL ODD NUMBERS 1 TO 100===================
+        // for(let i = 1; i <= 100; i++){
+        //     if(i % 2 != 0){
+        //         document.writeln(i,"<br>")
+        //     }
+        // }
+
+        //============================= 4. PRINT SUM OF N NATURAL NUMBER===============
+        // let n = parseInt(prompt("enter the number of terms :- "));
+        // let sum = 0;
+        // for(let i = 1; i <= n; i++){
+        //     sum = sum + i;
+        // }
+        // document.writeln(`The sum of ${n} number of terms is ${sum}`)
+
+        //=========================== 5. PRINT FACTORIAL OF A NUMBER==================
+        // let num = parseInt(prompt("enter any number :- "));
+        // let fact = 1;
+        // for(let i = 1; i <= num; i++){
+        //     fact = fact * i;
+        // }
+        // document.writeln(`Fcatorial of ${num} is ${fact}`)
+
+        //=============================== 6. MULTIPLICATION NUMBER OF NUMBER N ============
+        // let n = parseInt(prompt("enter any number :- "));
+        // for(let i = 1; i <= 10; i++){
+        //     document.writeln(`${n} X ${i} = ${n*i}<br>`)
+        // }
+
+        //========================= 7. REVERSE A GIVEN NUMBER===============================
+        // let num = parseInt(prompt("Enter any number :- "));
+        // let rev = 0;
+        // let temp = num;
+        // while(num > 0){
+        //     let last_digit = num % 10;
+        //     rev = rev * 10 + last_digit;
+        //     num  = parseInt(num / 10);
+        // }
+        // document.writeln(`Reverse of ${temp} is ${rev}`)
+
+        //=============================== 8. PALINDROME NUMBER===============================
+        // let num = parseInt(prompt("enter any number to check palindrome :- "));
+        // let temp = num;
+        // let rev = 0;
+        // while (num > 0) {
+        //     let last_digit = num % 10;
+        //     rev = rev * 10 + last_digit;
+        //     num = parseInt(num / 10);
+        // }
+        // document.writeln(`Reverse of ${temp} is ${rev}<br>`);
+        // if(rev == temp){
+        //     document.writeln(`${temp} is a palindrome number.`);
+        // }
+        // else{
+        //     document.writeln(`${temp} is not palindrome number.`);
+        // }
+
+        //=============================== 9. COUNT THE NUMBER OF DIGITS=================================
+        // let num = parseInt(prompt("Enter any number :- "));
+        // let count = 0;
+        // while(num > 0){
+        //     num = parseInt(num / 10);
+        //     count++;
+        // }
+        // document.writeln(count);
+
+        //============================= 10. SUM OF DIGITS OF A NUMBER======================================
+        // let num = parseInt(prompt("Enter the number of any digit :- "));
+        // let sum = 0;
+        // while(num > 0){
+        //     let last_digit = num % 10;
+        //     sum = sum + last_digit;
+        //     num = parseInt(num / 10);
+        // }
+        // document.writeln(`Sum of all digits of a number is ${sum}.`);
+
+        //============================== 11. FIBONICCI SERIES UPTO N NUMBER===============================
+        // let n = parseInt(prompt("Enter the number of terms :- "));
+        // let n1 = 0;
+        // let n2 = 1;
+        // let sum = 0;
+        // while(n > 0){
+        //     document.writeln(`${n1} , `);
+        //     sum = n1 + n2;
+        //     n1 = n2;
+        //     n2 = sum;
+        //     n--;
+        // }
+
+        //================================== 12. PRIME NUMBER=============================================
+        // let n = parseInt(prompt("Enter any number :- "));
+        // for(let i = 1; i <= n; i++){
+        //     if(n % i != 0){
+        //         document.writeln(`${n} is a prime number.<br>`);
+        //     }
+        //     else{
+        //         document.writeln(`${n} is not a prime number.<br>`)
+        //     }
+        // }
+
+
+        // let num=12;
+        // let num = parseInt(prompt("Enter any number :- "));
+
+        // let state=true;
+        // for(i=2;i<num;i++){
+        //     if(num%i==0){
+        //         state=false;
+        //     }
+        // }
+        // if(state==true){
+        //     document.writeln(num," is a Prime number")
+        // }
+        // else{
+        //     document.writeln(num," is not a Prime number")
+
+        // }
+
+        //=================================== 13. LARGEST DIGIT IN A NUMBER.=================================
+        // let num = parseInt(prompt("Enter any number of any length :- "));
+        // let largest = 0;
+        // while(num > 0){
+        //     let last_digit = num % 10;
+        //     if(last_digit > largest){
+        //         largest = last_digit;
+        //     }
+        //     num = parseInt(num / 10);
+        // }
+        // document.writeln(`Largest digit is ${largest}`)
+
+        //====================================14. RIGHT ANGLE TRIANGLE PATTERN==========================
+        // let n = parseInt(prompt("enter ther number of digits :- "));
+        // for(let i = 1; i <= n; i++){
+        //     for(let j = 1; j <= i; j++){
+        //         document.writeln("*");
+        //     }
+        //     document.writeln("<br>");
+        // }
+
+        //==================================== 15. INVERTED TRAINGLE PATTERN=============================
+        // let n = parseInt(prompt("Enter any number :- "));
+
+        // for (let i = n; i >= 1; i--) {
+        //     for (let j = 1; j <= i; j++) {
+        //         document.writeln("*");
+        //     }
+        //     document.writeln("<br>");
+        // }
+
+        //==================================== 16. PRINT A PYRAMID PATTERN===============================
+       let n = parseInt(prompt("enter a number  :-"));
+       for(let i = 1; i <= n; i++){
+        for(let j = 1; j <= n; j++){
+            document.writeln("*");
+        }
+        document.writeln("<br>")
+       }
+
+        //=================================== 17. PRINT NUMBEMBS 10 TO 1 USING WHILE LOOPS====================
+        // let i = 11;
+        // while(i > 1){
+        //     i--;
+        //     document.writeln(i, "<br>" );
+        // }
+     
+         
+        //=================================== 18. print GCD =============================================== 
+    </script>
+</body>
+
+</html>
