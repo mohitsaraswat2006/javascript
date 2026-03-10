@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>methods in array</title>
+</head>
+<body>
+    <script>
+        //==============================================METHODS IN ARRAY ====================================
+        // let arr = [10,20,45,96,35,72,56,-1]
+        
+        // document.writeln(arr.length,"<br>")  // lenth of array
+        
+        // document.writeln(arr.pop(),"<br>")    // remove last element from array
+        // document.writeln(arr)
+
+        // document.writeln(arr.shift(),"<br>")  // remove element from first index
+        // document.writeln(arr)
+
+        // document.writeln(arr.push(99),"<br>")   // add element at last
+        // document.writeln(arr)
+
+        // document.writeln(arr.unshift(11),"<br>")   // add element at first index of the array and returns length of the array.
+        // document.writeln(arr)
+
+        // document.writeln(arr.sort(),"<br>")   // sort the aaray in ascending order.
+        // document.writeln(arr)
+
+        // document.writeln(arr.reverse())    // reverse the array without sorting the array.
+
+        // document.writeln(arr.concat(arr2))    // it will concatinate the values of two arrays.
+        
+        // let arr2 = [55,331,554,89,112,125.852]
+
+
+        
+        //=============================AVERAGE MARKS=====================
+        marks = [85,97,44,37,76,60]
+        let sum = 0;
+        // sum = marks[0] + marks[1] + marks[2]..............
+        for(mark of marks){
+            sum = sum + mark
+        }
+        let average = sum / marks.length
+        document.writeln(`Average of marks is ${average}`)
+
+
+
+    </script>
+</body>
+</html>
