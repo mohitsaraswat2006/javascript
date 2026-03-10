@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>methods in array</title>
+    <style>
+        *{
+            background-color: rgb(209, 194, 212);
+            color: black;
+            font-size: 35px;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
     <script>
@@ -36,15 +44,50 @@
 
         
         //=============================AVERAGE MARKS=====================
-        marks = [85,97,44,37,76,60]
-        let sum = 0;
-        // sum = marks[0] + marks[1] + marks[2]..............
-        for(mark of marks){
-            sum = sum + mark
-        }
-        let average = sum / marks.length
-        document.writeln(`Average of marks is ${average}`)
+        // marks = [85,97,44,37,76,60]
+        // let sum = 0;
+        // // sum = marks[0] + marks[1] + marks[2]..............
+        // for(mark of marks){
+        //     sum = sum + mark
+        // }
+        // let average = sum / marks.length
+        // document.writeln(`Average of marks is ${average}`)
 
+        
+        
+        //===========================MORE METHODS OF JS=======================
+        let arr = [70,89,29,9,46,28,79]
+
+        // document.writeln(arr.lastIndexOf(28))     // returns the index of given value at last oocurance.
+
+        // let res = arr.forEach((value,index)=>{    //iterates over evry value.
+        //     // document.writeln(index)
+        //     document.writeln(value)
+        // })
+        
+        // let arr2 = [78,56,89,14,56,[45,63,12],[78,96],41];
+        // document.writeln(arr2.flat());
+
+        // let res = arr.map((num) => {
+        //     return num * 2;
+        // });
+        // document.writeln(res)
+
+        // document.writeln(arr.fill(0));
+
+        // let res = arr.every((num) => {
+        //     num = num % 2 == 0;
+        //     return num
+        // })
+        // document.writeln(res)
+
+        // let res = arr.some(num => num % 2 == 0)
+        // document.writeln(res)
+
+        // let res = arr.filter(function(num){
+        //     return num % 2 == 0
+        // })
+        // document.writeln(res)
 
 
     </script>
