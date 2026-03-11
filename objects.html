@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Objects in HTML</title>
+</head>
+<body>
+
+<script>
+let student = {
+    name : "Mohit Saraswat",
+    course : "B.Tech",
+    roll_no : 72,
+    age : 21,
+    address : "Mathura",
+    isSubmit : false,
+    marks : [90,43,56,76,87],
+    sum : 0,
+
+//     show_data : function(){
+//         this.marks.forEach((value)=>{
+//             this.sum = this.sum + value
+//         });
+
+//         document.writeln(`
+//         <h1>Student Information</h1>
+//         <h3>Name : <span>${this.name}</span></h3>
+//         <h3>Age : <span>${this.age}</span></h3>
+//         <h3>Roll Number : <span>${this.roll_no}</span></h3>
+//         <h3>Address : <span>${this.address}</span></h3>
+//         <h3>Submitted/not Submitted : <span>${this.isSubmit ? "Submit":"Not Submit"}</span></h3>
+//         <h3>Total Marks : <span>${this.sum}</span></h3>
+//         `);
+//     }
+}
+
+// student.show_data();
+
+
+//==============================================METHODS IN OBJECTS=================================
+
+
+let keys = Object.keys(student);      //return all keys of object.
+document.writeln(keys,"<br>")
+
+document.writeln(Object.values(student),"<br>")  // returns all values of object.
+
+document.writeln(Object.entries(student),"<br>")    // returns all key and value pairs of object.
+
+Object.freeze(student)     // mekes object immutable/unchangeable.
+student.name = "karan";
+document.writeln(student.name)
+
+</script>
+
+</body>
+</html>
