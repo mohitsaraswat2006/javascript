@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .dark {
+            background-color: black;
+            color: white;
+        }
+
+        .head {
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: rgb(201, 182, 218);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ============================================SIMPLE TOGGLE EFFECT================================================= -->
+    <!-- <ion-icon name="moon-outline"></ion-icon> -->
+
+    <header class="head">
+        <h1><ion-icon name="cube-outline"></ion-icon></h1>
+        <div>
+            <a href="#" class="menu">Home</a>
+            <a href="#" class="menu">About</a>
+            <a href="#" class="menu">Contract Us</a>
+            <a href="#" class="menu">Help</a>
+        </div>
+        <ion-icon onclick="dark()" class="btn" name="sunny-outline"></ion-icon>
+    </header>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam ratione iure praesentium consequatur
+        quibusdam ipsum molestiae hic amet eius rem soluta, neque explicabo dolorem temporibus ea dolor eveniet sequi
+        suscipit, distinctio itaque quasi veritatis! Ipsa maxime a ullam officiis excepturi ipsum magni perspiciatis
+        totam dolorem enim! Exercitationem suscipit vel quam sed rem, illum est! In soluta ducimus quibusdam beatae
+        provident impedit molestias harum culpa, dicta est aspernatur non rerum eius tempora facilis ea voluptas
+        accusamus quasi obcaecati delectus ex perferendis recusandae laudantium. Atque ab suscipit, molestiae incidunt
+        dolor, facilis recusandae aut veritatis quos ipsum, in rerum? Corrupti, et. Fugit, quidem quaerat tenetur, autem
+        laudantium, dolores expedita officia molestias rerum natus aut. Minima debitis, reiciendis officiis culpa
+        molestiae deserunt aliquam ipsa asperiores adipisci ad quia veniam nesciunt autem beatae eos inventore quaerat
+        odio dolor quis tempore! Ipsa harum expedita laborum, quisquam similique neque delectus accusantium quae, magni
+        ab in recusandae vero esse reiciendis! Dolore, incidunt iusto dolorum nihil nisi eius harum in aperiam debitis
+        sed totam nostrum vero repellat accusamus aliquid vel quas repellendus, maxime consequuntur eum saepe sint quo
+        eveniet eligendi. Aperiam beatae aspernatur pariatur? Suscipit, ut est temporibus natus minima totam nisi sunt
+        rerum doloribus, distinctio expedita molestias maxime culpa repudiandae iure nihil magni accusamus alias optio.
+        Officia ex dolor magnam eligendi atque necessitatibus totam. In quod rerum eveniet, est harum sit, saepe nostrum
+        modi totam nam laborum. Delectus repellat eius dignissimos nam. Id ipsa molestiae cupiditate perspiciatis at.
+        Molestias aperiam necessitatibus vel et maiores ipsam explicabo quasi aliquam eius consequuntur error,
+        praesentium reiciendis earum a exercitationem cumque esse harum quas libero nobis? Beatae, ipsa ex! Repudiandae
+        labore minima blanditiis provident velit placeat impedit adipisci assumenda architecto sapiente sed vero iure
+        eaque vel voluptatum, eius accusamus in alias sit ea tempora molestiae mollitia reprehenderit cumque! Culpa
+        ducimus consequuntur alias dolore labore magni eaque voluptatibus id minus autem odit, sint officia in quas!
+        Beatae, asperiores. Commodi ad molestias dolore, ipsum velit doloremque nemo esse obcaecati veritatis cumque
+        adipisci in deserunt sequi deleniti, magni minus quas nisi tempora perferendis nesciunt a at quasi tempore.
+        Ullam impedit tempora at, quae aperiam ipsum beatae libero repellat mollitia minima unde rerum voluptatum quia
+        maxime veniam velit fuga ipsam distinctio possimus esse vero iusto eveniet! Voluptatum, quibusdam repudiandae
+        quam iste totam suscipit accusantium, excepturi recusandae hic soluta quod aperiam esse amet ducimus consequatur
+        provident optio cum! Dolorum aut facere eveniet nam, sequi ut ea amet minus. Dicta odit iure facere quo
+        asperiores alias cumque sapiente iste sequi repudiandae, aperiam suscipit ducimus dignissimos nostrum
+        accusantium et necessitatibus. Libero ad id earum perspiciatis rem neque illo enim harum unde cupiditate, saepe
+        delectus obcaecati consequatur animi suscipit natus quia sapiente at quod dicta pariatur mollitia. Minima, eius
+        quibusdam. Est ad ipsam perferendis optio deleniti libero corporis molestiae, doloribus, harum modi rerum ut cum
+        nemo eligendi magnam possimus! Saepe at nostrum velit eos exercitationem, accusamus facere adipisci, ullam
+        aliquam accusantium nemo suscipit vero veritatis voluptatem, consequuntur mollitia. Reprehenderit minima, vero
+        deleniti sequi id repudiandae ipsum enim temporibus dicta asperiores.
+    </p>
+    <script>
+        let a = document.querySelector(".btn");
+        let body = document.querySelector("body");
+
+        let state = true;
+        function dark() {
+            if (state == true) {
+                a.setAttribute("name", "moon-outline")
+                body.setAttribute("class", "dark")
+                state = false;
+            }
+            else {
+                a.setAttribute("name", "sunny-outline")
+                body.removeAttribute("class")
+                state = true;
+            }
+        }
+    </script>
+</body>
+
+</html>
